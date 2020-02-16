@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+?php
+  require_once("../database.php");
+  require_once("../classes.php");
+
+
+
+  echo"<pre>";
+  var_dump($hotels);
+  echo"</pre>";
+  exit(0);
+
+  ?>
+  <!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -15,7 +27,6 @@
 	<main>
 		<article>
 			<p>ホテルの所在地を入力してください。所在地の一部でも構いません。</p>
-			
 			<form action="list.html" method="get">
 				<input type="text" name="address" />
 				<input type="submit" value="検索" />
